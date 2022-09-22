@@ -1,11 +1,14 @@
 :root {
     --white: #fff;
     --sage: #C1C181;
-    --background: ;
+    --background: #D2D3D8;
+    --banners: #9278DB;
 }
 
 * {
     box-sizing: border-box;
+    /* color: var(--white);
+    background-color: #080E24; */
 }
 
 header {
@@ -13,10 +16,9 @@ header {
     justify-content: space-between;
 }
 
-header nav {
-    padding-top: 25px;
+.aboutme {
+    background-color: var(--sage);
 }
-
 .aboutme p {
     justify-content: right;
     margin-left: 100px;
