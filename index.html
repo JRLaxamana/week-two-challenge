@@ -1,85 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Challenge 2 River Laxamana</title>
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <!--Header w/ Nav Bar-->
-    <header>
+    <!-- Header with Nav Bar -->
+    <header class="Header-w-NavLinks">
         <h1>River Laxamana</h1>
-        <nav>
-            <a href="#aboutme">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contact Me</a>
-            <a href="https://www.linkedin.com/">Resume</a>
+        <nav class="Header-NavLinks">
+            <a href="#">About Me</a>
+            <a href="#">Work</a>
+            <a href="#">Contact Me</a>
+            <a href="#">Resume</a>
         </nav>
     </header>
 
-    <!--Hero Image Banner-->
-    <section class="hero"></section>
+    <!-- Hero Image Banner /w Subtitle -->
+    <section class="hero">
+        <h2>Subtitle</h2>
+    </section>
 
-    <!-- About Me Section -->
-    <div class="aboutme" id="aboutme">
-        <header>
-            <h1>ABOUT ME</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ultrices sagittis orci a scelerisque purus semper eget duis. Nisi scelerisque eu ultrices vitae auctor eu augue. Dictum varius duis at consectetur lorem donec massa. Mattis nunc sed blandit libero volutpat sed cras ornare. Nunc eget lorem dolor sed.
-        
-            </p>
-        </header>
-    </div>
+    <!-- Aside Bar
+    <aside>Aside Bar for Web Page</aside> -->
 
-    <!-- Project Section -->
-    <main class="projects-header">
-        <header>
-            <h1>PROJECTS</h1>
-        </header>
-    <div class="mainproj" id="projects">
-        <section class="projbox">
-            <header><h1>Project1</h1></header>
-            <p>Project Description</p>
-            <a href="#">Link to Project</a>
-            <img src="#" alt="">
-        </section>
-        <section class="projbox">
-            <header><h1>Project2</h1></header>
-            <p>Project Description</p>
-            <a href="#">Link to Project</a>
-        </section>
-        <section class="projbox">
-            <header><h1>Project3</h1></header>
-            <p>Project Description</p>
-            <a href="#">Link to Project</a>
-        </section>
-        <section class="projbox">
-            <header><h1>Project4</h1></header>
-            <p>Project Description</p>
-            <a href="#">Link to Project</a>
-        </section>
-        <section class="projbox">
-            <header><h1>Project5</h1></header>
-            <p>Project Description</p>
-            <a href="#">Link to Project</a>
-        </section>
-    </div></main>
+    <main>
 
-    <!-- Contact Me Section -->
-    <div class="contacts" id="contacts">
-        <header>
-            <h1>Contact Me!</h1>
-        <nav>
-            <a href="#">Email</a>
-            <a href="#">Twitter</a>
-            <a href="#">Phone</a>
-        </nav>
-        </header>
-    </div>
+        <!-- About Me -->
+        <section class="aboutme">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent viverra odio sit amet augue laoreet,
+                vitae egestas tortor vestibulum. Suspendisse vitae gravida lectus. Aenean nec commodo quam. Morbi sed
+                pulvinar neque, consectetur maximus orci. Suspendisse sollicitudin nulla at convallis fringilla.</p>
+        </section>
 
+        <!-- Projects w/ Display Cards-->
+        <section class="project-section">
+            <div class="project-card">
+                <a href="#">
+                    <div>
+                        <h3>Project 1</h3>
+                        <p>Suspendisse sollicitudin</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="#">
+                    <div>
+                        <h3>Project 2</h3>
+                        <p>Suspendisse sollicitudin</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="#">
+                    <div>
+                        <h3>Project 3</h3>
+                        <p>Suspendisse sollicitudin</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="contact-me">
+            <h2>Contact Me</h2>
+            <div>
+                <a href="#">Email</a>
+                <a href="#">Phone</a>
+                <a href="#">Twitter</a>
+                <a href="#">GitHub</a>
+                <a href="#">Spotify</a>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+        </footer>
+    </main>
 </body>
-
 </html>

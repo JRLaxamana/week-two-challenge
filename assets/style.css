@@ -1,83 +1,75 @@
+/* Style Sheet */
+
 :root {
     --white: #fff;
     --black: #000;
-    --sage: #C1C181 ;
-    --background: #D2D3D8 ;
-    --banners: #9278DB ;
-    --borders: darkblue ;
+    --light-blue: #7C9CA2;
+    --dark-blue: #154658;
+    --background: #F6FFF8;
 }
-
-* {
-    box-sizing: border-box;
-    color: var(--black);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 body {
     background-color: var(--background);
+    color: var(--black);
 }
 
-/* Top of the page header & nav */
-header {
+
+/* Header Section CSS */
+.Header-w-NavLinks {
     display: flex;
     justify-content: space-between;
+    background-color: var(--light-blue);
 }
-header nav {
-    margin-top: 1%;
-    font-size: 32px;
+.Header-w-NavLinks h1 {
+    background-color: var(--white);
+    width: 250px;
+}
+.Header-NavLinks {
+    margin-top: 2%;
+}
+.Header-NavLinks a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+    font-size: 28px;
 }
 
-/* About Me Section */
-.aboutme {
-    background-color: var(--banners);
-}
-.aboutme p {
-    justify-content: right;
-    margin-left: 100px;
-    font-size: medium;
-}
 
-/* Banner Section w/ image*/
+/* Hero Image Banner */
 .hero {
     width: 100%;
-    height: 600px;
-    background-image: url(https://images.unsplash.com/photo-1603531763662-109ff15864c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    background-position: top;
-}
-
-/* Project boxes */
-.projbox {
-    justify-content: right;
-    display: inline-block ;
-    flex: 1 0 0;
     height: 250px;
-    width: 400px;
-    border-style: solid;
-    border-color: var(--borders);
+    background-image: url(https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80);
+}
+.hero h2 {
+    background-color: var(--white);
+    width: max-content;
 }
 
-.projbox header{
-    position: relative;
-    justify-content: center;
-    background-color: var(--banners);
+/* About Me CSS */
+.aboutme {
+    display: inline-block;
+}
+.aboutme h2 {
+    margin-right: 15%;
 }
 
-/* Contact Me Section */
-
-.contacts {
-    margin-top: 15%;
+/* Project Section CSS */
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-
-
-
-
-
-@media screen and (max-width: 768px) {
-    main,
-    nav,
-    .projbox {
-        flex-direction: column;
-    }
-    
+.project-card {
+    width: 30%;
+    min-height: 100px;
+    margin: 3px;
+    border: 5px solid var(--black);
+    padding: 10px;
 }
+ .project-card div {
+    padding: 20px;
+ }
+
+
+
+/* Contact Me CSS */
+ @media screen and (max-width: 768px) {
+  }
