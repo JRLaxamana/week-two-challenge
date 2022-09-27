@@ -12,6 +12,14 @@ body {
     color: var(--black);
 }
 
+/* Vertical Line for About Me */
+.aboutme-vertical {
+    border-left: 6px solid black;
+    height: 200px;
+    position: inline;
+    left: 16%;
+}
+
 
 /* Header Section CSS */
 .Header-w-NavLinks {
@@ -46,37 +54,126 @@ body {
 .hero h2 {
     background-color: var(--white);
     width: max-content;
+    float: right;
+    margin-top: 200px;
+    margin-right: 10px;
+    font-size: 36px;
 }
 
 /* About Me CSS */
 .aboutme {
-    display: inline-block;
+    display: flex;
+    margin-top: 1%;
 }
 
 .aboutme h2 {
-    margin-right: 15%;
+    margin: 5%;
+    font-size: 38px;
+}
+
+.aboutme p {
+    margin-left: 1%;
+    font-size: 18px;
 }
 
 /* Project Section CSS */
-.project-section {
+
+.projects-vertical {
+    border-left: 6px solid black;
+    height: 200px;
+    position: inline;
+    left: 16%;
+}
+
+.projects-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.project-card {
-    width: 30%;
-    min-height: 100px;
+.project-section {
+    margin-top: 8%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-section h2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    font-size: 38px;
+}
+
+/*Project Card Section*/
+.project-card-1 {
+    width: 300px;
+    height: 200px;
     margin: 3px;
     border: 5px solid var(--black);
     padding: 10px;
+    background-image: url('../images/Rick-Astley-Never-Gonna-Give-You-Up.jpg');
+    background-size: cover;
+    opacity: 75%;
+}   
+.project-card-2 {
+    width: 300px;
+    height: 200px;
+    margin: 3px;
+    border: 5px solid var(--black);
+    padding: 10px;
+    background-image: url('../images/bananas.jpg');
+    background-position: cover;
+    opacity: 75%;
 }
+.project-card-3 {
+    width: 300px;
+    height: 200px;
+    margin: 3px;
+    border: 5px solid var(--black);
+    padding: 10px;
+    background-image: url('../images/rpg-dice.jpg');
+    background-position: cover;
+    opacity: 75%;
+}
+.project-card-4 {
+    width: 300px;
+    height: 200px;
+    margin: 3px;
+    border: 5px solid var(--black);
+    padding: 10px;
+    background-image: url('../images/Rick-Astley-Never-Gonna-Give-You-Up.jpg');
+    background-position: cover;
+    opacity: 75%;
+}
+
+/*Project Card Properties*/
 
  .project-card div {
     padding: 20px;
  }
 
-
-
 /* Contact Me CSS */
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-blue);
+    margin-top: 20%;
+}
+
+.contact-me h2 {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+.contact-me div {
+    margin-top: 3%;
+}
+
+.contact-me a {
+    color: var(--dark-blue);
+    text-decoration: underline;
+    font-size: 28px;
+}
+
  @media screen and (max-width: 768px) {
   }
