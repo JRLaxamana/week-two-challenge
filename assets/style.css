@@ -1,29 +1,43 @@
 :root {
     --white: #fff;
-    --sage: #C1C181;
-    --background: #D2D3D8;
-    --banners: #9278DB;
+    --black: #000;
+    --sage: #C1C181 ;
+    --background: #D2D3D8 ;
+    --banners: #9278DB ;
+    --borders: darkblue ;
 }
 
 * {
     box-sizing: border-box;
-    /* color: var(--white);
-    background-color: #080E24; */
+    color: var(--black);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+    background-color: var(--background);
+}
+
+/* Top of the page header & nav */
 header {
     display: flex;
     justify-content: space-between;
 }
+header nav {
+    margin-top: 1%;
+    font-size: 32px;
+}
 
+/* About Me Section */
 .aboutme {
-    background-color: var(--sage);
+    background-color: var(--banners);
 }
 .aboutme p {
     justify-content: right;
     margin-left: 100px;
+    font-size: medium;
 }
 
+/* Banner Section w/ image*/
 .hero {
     width: 100%;
     height: 600px;
@@ -31,10 +45,39 @@ header {
     background-position: top;
 }
 
+/* Project boxes */
 .projbox {
+    justify-content: right;
     display: inline-block ;
     flex: 1 0 0;
-    height: 200px;
-    width: 300px;
+    height: 250px;
+    width: 400px;
     border-style: solid;
+    border-color: var(--borders);
+}
+
+.projbox header{
+    position: relative;
+    justify-content: center;
+    background-color: var(--banners);
+}
+
+/* Contact Me Section */
+
+.contacts {
+    margin-top: 15%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    main,
+    nav,
+    .projbox {
+        flex-direction: column;
+    }
+    
 }
