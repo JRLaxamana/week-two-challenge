@@ -19,13 +19,16 @@ body {
     justify-content: space-between;
     background-color: var(--light-blue);
 }
+
 .Header-w-NavLinks h1 {
     background-color: var(--white);
     width: 250px;
 }
+
 .Header-NavLinks {
     margin-top: 2%;
 }
+
 .Header-NavLinks a {
     color: var(--dark-blue);
     text-decoration: underline;
@@ -39,6 +42,7 @@ body {
     height: 250px;
     background-image: url(https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80);
 }
+
 .hero h2 {
     background-color: var(--white);
     width: max-content;
@@ -48,6 +52,7 @@ body {
 .aboutme {
     display: inline-block;
 }
+
 .aboutme h2 {
     margin-right: 15%;
 }
@@ -57,6 +62,7 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+
 .project-card {
     width: 30%;
     min-height: 100px;
@@ -64,6 +70,7 @@ body {
     border: 5px solid var(--black);
     padding: 10px;
 }
+
  .project-card div {
     padding: 20px;
  }
